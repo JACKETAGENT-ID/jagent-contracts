@@ -19,7 +19,7 @@ Agent ID NFT sale + non-custodial market on BNB Smart Chain (chainId 56). Phase 
 
 - Free-minted NFT: 15,000,000 JAGENT each (500 x 15M = 7,500,000,000).
 - Paid-minted NFT, by batch: batch 1 = 50,000,000 JAGENT each, decreasing by 5% of the batch-1 amount (2,500,000) per batch — batch 2 = 47,500,000, batch 3 = 45,000,000, …, batch 15 = 15,000,000. Paid total 487,500,000,000.
-- Total supply 1,000,000,000,000 fixed; the remainder (505,000,000,000) goes to the liquidity pool. No burn.
+- Total supply 1,000,000,000,000 fixed; no token burn. The remainder (505,000,000,000) follows a published agenda (see TOKEN-AGENDA.md): 200,000,000,000 initial PancakeSwap liquidity (LP burned), 100,000,000,000 liquidity ladder (LP burned), 75,000,000,000 community & airdrops (12-month vesting), 50,000,000,000 marketing & partnerships (6–12-month vesting), 40,000,000,000 strategic/CEX reserve (locked until a real need), 40,000,000,000 team & operations (3-month cliff + 12-month linear vesting).
 
 ## Build
 
