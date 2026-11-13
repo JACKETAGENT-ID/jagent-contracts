@@ -2,7 +2,7 @@
 
 BNB Smart Chain（chainId 56）上的 Agent ID NFT 发售 + 非托管市场。第一阶段仅发售 NFT；JAGENT 代币（第二阶段）将于日后按 NFT 持有人快照分配。
 
-- 官网：https://jagent.pages.dev
+- 官网：https://jacketagent.pages.dev
 - NFT（JagentNFT，ERC-721 + 发售）：通过 CREATE2 部署（Arachnid 代理，salt 0）——最终地址由部署构建计算（startDelay 对准下方发售开始时间），部署后在此公布。
 - 市场（JagentMarket，非托管，手续费 2.5%）：紧随 NFT 合约以相同方式部署。
 - Agent ID 注册表：`0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`
