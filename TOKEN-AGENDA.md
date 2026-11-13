@@ -1,43 +1,38 @@
-# AGENDA SISA TOKEN $JAGENT — 505 M (50,5% suplai)
+# $JAGENT 剩余代币议程 — 5,050 亿（占供应量 50.5%）
 
-Status: DISETUJUI pengguna 13 Nov 2026 (07:06 WIB) — tokenomics publik (situs, llms.txt, agent.json, README GitHub) sudah diperbarui mengikuti agenda ini. LP DIBAKAR: keputusan pengguna 13 Nov 07:07 WIB ("lp bakar aja"), menggantikan opsi kunci LP.
+状态：已于 2026 年 11 月 13 日经项目方确认——公开代币经济学（官网、llms.txt、agent.json、本仓库 README）已按本议程更新。LP 全部销毁（替代早先的锁仓方案）。
 
-## Konteks angka (suplai total 1 T = 1.000 M)
+## 背景数字（总供应量 1 万亿）
 
-| Alokasi | Jumlah | % suplai | Status |
+| 分配 | 数量 | 占供应量 | 状态 |
 |---|---|---|---|
-| Snapshot NFT free (500 × 15 jt) | 7,5 M | 0,75% | Terkunci desain |
-| Snapshot NFT paid (487,5 M, batch 1–15) | 487,5 M | 48,75% | Terkunci desain |
-| **Sisa (dokumen ini)** | **505 M** | **50,5%** | **Diatur di sini** |
+| 快照 — 免费 NFT（500 × 1,500万） | 75亿 | 0.75% | 设计锁定 |
+| 快照 — 付费 NFT（15 批合计） | 4,875亿 | 48.75% | 设计锁定 |
+| **剩余（本文件）** | **5,050亿** | **50.5%** | **本议程安排** |
 
-## Usulan pembagian sisa 505 M
+## 剩余 5,050 亿的分配方案
 
-| # | Kantong | Jumlah | % suplai | Jadwal buka |
+| # | 用途 | 数量 | 占供应量 | 释放安排 |
 |---|---|---|---|---|
-| 1 | Likuiditas awal PancakeSwap | 200 M | 20% | Di TGE, dipasangkan dengan sebagian hasil sale; LP DIBAKAR |
-| 2 | Tangga likuiditas (pendalaman pool) | 100 M | 10% | Bertahap: maks 25 M/bulan mulai bulan ke-2, hanya saat volume/pegangan naik; LP tiap penambahan DIBAKAR |
-| 3 | Airdrop & komunitas | 75 M | 7,5% | Vesting 12 bulan (±6,25 M/bulan): quest, lomba, reward holder NFT |
-| 4 | Marketing & kemitraan | 50 M | 5% | Vesting 6–12 bulan: KOL, kolaborasi proyek Agent ID, listing |
-| 5 | Cadangan strategis / CEX | 40 M | 4% | Terkunci penuh s.d. ada kebutuhan nyata (listing CEX / market making); alamat dipublikasikan |
-| 6 | Tim & operasional | 40 M | 4% | Cliff 3 bulan, lalu vesting linear 12 bulan — porsi kecil demi kepercayaan publik |
+| 1 | PancakeSwap 初始流动性 | 2,000亿 | 20% | TGE 时与部分发售所得配对；LP 销毁 |
+| 2 | 流动性阶梯（加深池子） | 1,000亿 | 10% | 自第 2 个月起每月最多 250亿，随交易量/持有人增长释放；每次添加的 LP 均销毁 |
+| 3 | 空投与社区 | 750亿 | 7.5% | 12 个月线性解锁（约每月 62.5亿）：任务、竞赛、NFT 持有人奖励 |
+| 4 | 市场与合作 | 500亿 | 5% | 6–12 个月线性解锁：KOL、Agent ID 项目合作、上币 |
+| 5 | 战略储备 / CEX | 400亿 | 4% | 全额锁定至实际需要（CEX 上币 / 做市）；地址公开 |
+| 6 | 团队与运营 | 400亿 | 4% | 3 个月悬崖期，其后 12 个月线性解锁——小比例以维护公众信任 |
 
-Total: 505 M (50,5%) ✓
+合计：5,050 亿（50.5%）✓
 
-## Garis waktu
+## 时间线
 
-- **TGE (setelah snapshot NFT diumumkan):** distribusi snapshot ke holder NFT; pool dibuka
-  dengan kantong #1 (200 M) + BNB dari hasil sale (usul: ±50% hasil sale bersih masuk pasangan
-  awal, sisanya kas operasional — keputusan terpisah saat angka sale final diketahui).
-- **Bulan 1:** kantong #3 mulai (airdrop perdana buat holder + peserta quest); kantong #4 sesuai kebutuhan.
-- **Bulan 2–7:** kantong #2 menetes maks 25 M/bulan untuk memperdalam pool sesuai pertumbuhan.
-- **Bulan 3:** cliff tim (#6) berakhir, vesting mulai.
-- **Bulan 6–12:** sisa vesting komunitas/marketing selesai; evaluasi kantong #5 (pakai atau perpanjang kunci).
+- **TGE（NFT 快照公布后）：** 向 NFT 持有人分发快照代币；以第 1 项（2,000亿）+ 发售所得 BNB 开池（初步方案：约 50% 发售净所得进入初始配对，其余为运营储备——待发售最终数字确定后另行决定）。
+- **第 1 个月：** 第 3 项启动（持有人首轮空投 + 任务参与者）；第 4 项按需使用。
+- **第 2–7 个月：** 第 2 项每月最多释放 250亿，随增长加深池子。
+- **第 3 个月：** 团队悬崖期（第 6 项）结束，线性解锁开始。
+- **第 6–12 个月：** 社区/市场剩余解锁完成；评估第 5 项（动用或延长锁定）。
 
-## Prinsip penjaga
+## 守护原则
 
-- Semua kantong non-pool ditahan di alamat publik terpisah + kunci/vesting yang bisa diverifikasi
-  siapa pun (PinkLock/UNCX atau kontrak timelock sendiri); alamat diumumkan di llms.txt/README.
-- Tidak ada kantong yang bisa dicairkan diam-diam: setiap pelepasan = transaksi on-chain dari
-  alamat yang sudah diumumkan.
-- Jangan taruh seluruh 505 M di pool awal: cadangan likuiditas kering + harga pembuka terlalu
-  berat di sisi token. Pool awal 200 M sudah ±29% dari suplai beredar awal (snapshot 495 M + 200 M).
+- 所有非池子用途均由独立的公开地址持有，并附任何人可验证的锁定/解锁安排（PinkLock/UNCX 或自有时间锁合约）；地址将在 llms.txt/README 公布。
+- 任何用途都不可暗中动用：每次释放均为来自已公布地址的链上交易。
+- 不将全部 5,050 亿放入初始池：流动性储备会枯竭且开盘价格在代币一侧过重。初始池 2,000 亿约为初始流通量（快照 4,950亿 + 2,000亿）的 29%。

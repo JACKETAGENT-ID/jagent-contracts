@@ -1,26 +1,26 @@
-# JAGENT — Contracts
+# JAGENT — 合约
 
-Agent ID NFT sale + non-custodial market on BNB Smart Chain (chainId 56). Phase 1 is NFT only; the JAGENT token (Phase 2) will be distributed later by snapshot of NFT holders.
+BNB Smart Chain（chainId 56）上的 Agent ID NFT 发售 + 非托管市场。第一阶段仅发售 NFT；JAGENT 代币（第二阶段）将于日后按 NFT 持有人快照分配。
 
-- Website: https://jagent.pages.dev
-- NFT (JagentNFT, ERC-721 + sale): deployed via CREATE2 (Arachnid proxy, salt 0) — final address is computed by the deploy build (startDelay targets the sale start below) and published here after deployment.
-- Market (JagentMarket, non-custodial, 2.5% fee): deployed right after the NFT contract the same way.
-- Agent ID registry: `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`
-- Payee (free fees, finalized escrow, market fees): `0xB5d7aec297705337F3e09Ec4F802a580EFfEa0D3`
+- 官网：https://jagent.pages.dev
+- NFT（JagentNFT，ERC-721 + 发售）：通过 CREATE2 部署（Arachnid 代理，salt 0）——最终地址由部署构建计算（startDelay 对准下方发售开始时间），部署后在此公布。
+- 市场（JagentMarket，非托管，手续费 2.5%）：紧随 NFT 合约以相同方式部署。
+- Agent ID 注册表：`0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`
+- Payee 收款地址（免费费、finalize 后的托管款、市场手续费）：`0xB5d7aec297705337F3e09Ec4F802a580EFfEa0D3`
 
-## Sale (starts 15 Nov 2026, 00:00 Beijing time)
+## 发售（2026 年 11 月 15 日 00:00 北京时间开始）
 
-- FREE phase: first 500 Agent IDs, 1 NFT each, 0.0001 BNB service fee (forwarded to the payee immediately, never refundable). Lasts 24 hours or until sold out.
-- PAID phase: 0.003 BNB per NFT, max 10 per Agent ID, cap 15,000 — organized as 15 batches of 1,000 mints by mint order.
-- ESCROW + REFUND GUARANTEE: paid mint payments are held in the NFT contract, not forwarded. If at least 4,000 paid NFTs (4 batches) are sold before the deadline (17 Nov 2026, 00:00 Beijing time), anyone can call `finalize()`: the escrow is released to the payee, paid NFTs unlock (open trade), and minting continues to the cap with payments forwarded immediately. If the deadline passes below the floor, minting stops forever and every paid NFT holder can call `refundPaid(tokenId)` to burn that NFT and reclaim exactly 0.003 BNB.
-- Paid NFTs are non-transferable until finalization. No owner, no pause, no upgrade, no admin withdrawal: escrowed funds can only go to the payee (finalize) or back to paid holders (refund).
+- 免费阶段：前 500 个 Agent ID，每个 1 张 NFT，服务费 0.0001 BNB（即时转给 payee，永不退还）。持续 24 小时或至售罄。
+- 付费阶段：每张 0.003 BNB，每个 Agent ID 最多 10 张，总上限 15,000 张——按铸造顺序分 15 批，每批 1,000 张。
+- 托管 + 退款保障：付费铸造款由 NFT 合约托管，不转发。若在截止时间（2026 年 11 月 17 日 00:00 北京时间）前售出至少 4,000 张付费 NFT（4 批），任何人可调用 `finalize()`：托管款释放给 payee，付费 NFT 解锁（开放交易），铸造继续至上限且款项即时转发。若截止时低于达标线，铸造永久停止，每位付费 NFT 持有人可调用 `refundPaid(tokenId)` 销毁该 NFT 并取回整整 0.003 BNB。
+- 付费 NFT 在 finalize 前不可转让。无 owner、无暂停、无升级、无管理员提现：托管资金只能去往 payee（finalize）或退回付费持有人（退款）。
 
-## Phase 2 token entitlement (snapshot, planned)
+## 第二阶段代币权益（快照，计划）
 
-- Free-minted NFT: 15,000,000 JAGENT each (500 x 15M = 7,500,000,000).
-- Paid-minted NFT, by batch: batch 1 = 50,000,000 JAGENT each, decreasing by 5% of the batch-1 amount (2,500,000) per batch — batch 2 = 47,500,000, batch 3 = 45,000,000, …, batch 15 = 15,000,000. Paid total 487,500,000,000.
-- Total supply 1,000,000,000,000 fixed; no token burn. The remainder (505,000,000,000) follows a published agenda (see TOKEN-AGENDA.md): 200,000,000,000 initial PancakeSwap liquidity (LP burned), 100,000,000,000 liquidity ladder (LP burned), 75,000,000,000 community & airdrops (12-month vesting), 50,000,000,000 marketing & partnerships (6–12-month vesting), 40,000,000,000 strategic/CEX reserve (locked until a real need), 40,000,000,000 team & operations (3-month cliff + 12-month linear vesting).
+- 免费铸造 NFT：每张 15,000,000 JAGENT（500 x 15M = 7,500,000,000）。
+- 付费铸造 NFT，按批次：第 1 批每张 50,000,000 JAGENT，每批递减第 1 批金额的 5%（2,500,000）——第 2 批 = 47,500,000，第 3 批 = 45,000,000，……，第 15 批 = 15,000,000。付费合计 487,500,000,000。
+- 总供应量固定 1,000,000,000,000；代币不设销毁。其余（505,000,000,000）按公开议程分配（见 TOKEN-AGENDA.md）：初始 PancakeSwap 流动性 200,000,000,000（LP 销毁），流动性阶梯 100,000,000,000（LP 销毁），社区与空投 75,000,000,000（12 个月线性解锁），市场与合作 50,000,000,000（6–12 个月线性解锁），战略/CEX 储备 40,000,000,000（锁定至实际需要时），团队与运营 40,000,000,000（3 个月悬崖期 + 12 个月线性解锁）。
 
-## Build
+## 构建
 
-Solidity 0.8.28, viaIR, optimizer 200 runs. OpenZeppelin contracts (ERC721, ReentrancyGuard). Both contracts are deployed via the Arachnid CREATE2 proxy (salt 0) and verified on Sourcify (exact match).
+Solidity 0.8.28，viaIR，优化器 200 次。OpenZeppelin 合约（ERC721、ReentrancyGuard）。两份合约均通过 Arachnid CREATE2 代理（salt 0）部署，并在 Sourcify 精确匹配验证。
