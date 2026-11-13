@@ -24,3 +24,11 @@ BNB Smart Chain（chainId 56）上的 Agent ID NFT 发售 + 非托管市场。�
 ## 构建
 
 Solidity 0.8.28，viaIR，优化器 200 次。OpenZeppelin 合约（ERC721、ReentrancyGuard）。两份合约均通过 Arachnid CREATE2 代理（salt 0）部署，并在 Sourcify 精确匹配验证。
+
+
+## 部署地址（BSC 主网，2026-11-13）
+
+- JagentNFT: 0x70FdD1a7f382893708d00fC2eF9C38cAe7DEC92B
+- JagentMarket: 0x043d60d568456DE954D405cf69ABf65C624c4139
+- 两份合约均已在 Sourcify 精确匹配验证。
+- 官方X: https://x.com/jacketagent
